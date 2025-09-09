@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELITE KICKS | Premium Sport Footwear</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #000000 0%, #1a1a2e 50%, #16213e 100%);
+        }
+        .sport-texture {
+            background-image: radial-gradient(circle at 10% 20%, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 50%);
+        }
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        .nav-link::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #f8fafc;
+            transition: width .3s;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans antialiased">
+    <!-- Vanta.js Background -->
+    <div id="vanta-bg" class="fixed inset-0 -z-10 opacity-20"></div>
+
+    <!-- Navigation -->
+    <nav class="bg-black bg-opacity-90 text-white sticky top-0 z-50 shadow-xl">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <i data-feather="zap" class="text-yellow-400"></i>
+                    <span class="text-2xl font-bold tracking-tighter">ELITE KICKS</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#" class="nav-link font-medium">Home</a>
+                    <a href="#" class="nav-link font-medium">Collections</a>
+                    <a href="#" class="nav-link font-medium">Limited Edition</a>
+                    <a href="#" class="nav-link font-medium">About</a>
+                    <a href="#" class="nav-link font-medium">Contact</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <i data-feather="search" class="cursor-pointer hover:text-yellow-400"></i>
+                    <i data-feather="shopping-bag" class="cursor-pointer hover:text-yellow-400"></i>
+                    <i data-feather="user" class="cursor-pointer hover:text-yellow-400"></i>
+                    <button class="md:hidden">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white relative overflow-hidden">
+        <div class="container mx-auto px-6 py-24 md:py-32 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-12 md:mb-0" data-aos="fade-right">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">PERFORMANCE <span class="text-yellow-400">MEETS STYLE</span></h1>
+                <p class="text-lg md:text-xl mb-8 opacity-90">Experience the pinnacle of athletic footwear technology with our premium collection designed for champions.</p>
+                <div class="flex space-x-4">
+                    <button class="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">
+                        SHOP NOW
+                    </button>
+                    <button class="border-2 border-white hover:bg-white hover:text-black font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">
+                        EXPLORE
+                    </button>
+                </div>
+            </div>
+            <div class="md:w-1/2" data-aos="fade-left">
+                <img src="http://static.photos/sport/1200x630/42" alt="Premium Sport Shoes" class="w-full h-auto rounded-xl shadow-2xl transform rotate-3">
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-gray-100 to-transparent"></div>
+    </section>
+
+    <!-- Featured Collections -->
+    <section class="py-20 bg-gray-100 sport-texture">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">LIMITED EDITION COLLECTIONS</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Handcrafted with premium materials and cutting-edge technology for the ultimate athletic experience.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Collection 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg transition duration-500 product-card" data-aos="zoom-in">
+                    <div class="relative">
+                        <img src="http://static.photos/sport/640x360/101" alt="Running Collection" class="w-full h-64 object-cover">
+                        <div class="absolute top-4 right-4 bg-yellow-400 text-black px-3 py-1 rounded-full text-sm font-bold">NEW</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Velocity Pro</h3>
+                        <p class="text-gray-600 mb-4">Ultra-lightweight running shoes with responsive cushioning</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold">$249</span>
+                            <button class="bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800 transition">
+                                <i data-feather="shopping-cart" class="w-4 h-4"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Collection 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg transition duration-500 product-card" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="relative">
+                        <img src="http://static.photos/sport/640x360/102" alt="Basketball Collection" class="w-full h-64 object-cover">
+                        <div class="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold">LIMITED</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Court Dominator</h3>
+                        <p class="text-gray-600 mb-4">High-performance basketball shoes with ankle support</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold">$279</span>
+                            <button class="bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800 transition">
+                                <i data-feather="shopping-cart" class="w-4 h-4"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Collection 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg transition duration-500 product-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="relative">
+                        <img src="http://static.photos/sport/640x360/103" alt="Training Collection" class="w-full h-64 object-cover">
+                        <div class="absolute top-4 right-4 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">BESTSELLER</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Titan Trainer</h3>
+                        <p class="text-gray-600 mb-4">Versatile training shoes for all your workouts</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold">$219</span>
+                            <button class="bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800 transition">
+                                <i data-feather="shopping-cart" class="w-4 h-4"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Showcase -->
+    <section class="py-20 bg-black text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">CUTTING-EDGE TECHNOLOGY</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Engineered for peak performance with innovative features that give you the competitive edge.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- Tech 1 -->
+                <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-gray-900 rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-6">
+                        <i data-feather="activity" class="w-12 h-12 text-yellow-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">ENERGY RETURN</h3>
+                    <p class="text-gray-400">Our proprietary foam compound returns energy with every step for explosive movements.</p>
+                </div>
+                
+                <!-- Tech 2 -->
+                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-gray-900 rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-6">
+                        <i data-feather="wind" class="w-12 h-12 text-yellow-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">BREATHABLE UPPER</h3>
+                    <p class="text-gray-400">Engineered mesh provides optimal airflow to keep your feet cool during intense activity.</p>
+                </div>
+                
+                <!-- Tech 3 -->
+                <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-gray-900 rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-6">
+                        <i data-feather="shield" class="w-12 h-12 text-yellow-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">STABILITY PLATE</h3>
+                    <p class="text-gray-400">Carbon fiber plate provides torsional stability while allowing natural foot movement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Athlete Spotlight -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0" data-aos="fade-right">
+                    <img src="http://static.photos/sport/640x360/104" alt="Professional Athlete" class="w-full rounded-xl shadow-xl">
+                </div>
+                <div class="md:w-1/2 md:pl-12" data-aos="fade-left">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">WORLD-CLASS ATHLETES TRUST OUR GEAR</h2>
+                    <p class="text-gray-600 mb-8">"The difference in performance is night and day. Since switching to ELITE KICKS, my game has reached new heights. The combination of comfort, responsiveness, and style is unmatched in the industry."</p>
+                    <div class="flex items-center">
+                        <div class="w-16 h-16 rounded-full overflow-hidden mr-4">
+                            <img src="http://static.photos/people/200x200/105" alt="Athlete" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Marcus Johnson</h4>
+                            <p class="text-gray-600">Professional Basketball Player</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-16 bg-yellow-400 text-black">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6" data-aos="fade-up">JOIN THE ELITE</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">Subscribe to get exclusive access to limited releases, special offers, and athlete insights.</p>
+            <div class="flex flex-col md:flex-row max-w-md mx-auto md:max-w-xl" data-aos="fade-up" data-aos-delay="200">
+                <input type="email" placeholder="Your email address" class="flex-grow px-6 py-4 rounded-l-full md:rounded-r-none rounded-r-full mb-4 md:mb-0 focus:outline-none">
+                <button class="bg-black text-white px-8 py-4 rounded-r-full md:rounded-l-none rounded-l-full hover:bg-gray-900 transition font-bold">
+                    SUBSCRIBE
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div>
+                    <div class="flex items-center space-x-2 mb-6">
+                        <i data-feather="zap" class="text-yellow-400"></i>
+                        <span class="text-2xl font-bold tracking-tighter">ELITE KICKS</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">The ultimate destination for premium athletic footwear.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-feather="instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-feather="twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-feather="facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-feather="youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">SHOP</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Running</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Basketball</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Training</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Limited Edition</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Accessories</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">SUPPORT</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">FAQs</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Shipping</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Returns</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Size Guide</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">COMPANY</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Sustainability</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Press</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Athletes</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2023 ELITE KICKS. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Vanta.js
+        VANTA.GLOBE({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0xffd700,
+            backgroundColor: 0x0
+        });
+
+        // Initialize AOS and Feather Icons
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true
+            });
+            feather.replace();
+        });
+    </script>
+</body>
+</html>
